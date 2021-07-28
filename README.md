@@ -11,7 +11,7 @@ const { readFileSync } = require('fs');
 const { Connection, constants, ApiClient } = require('goji-api');
 
 (async () => {
-  const conn = new Connection('localhost:25400', {
+  const conn = new Connection('localhost:57500', {
     cert: readFileSync('private_daemon.crt'),
     key: readFileSync('private_daemon.key'),
   });
